@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { styled } from '@mui/material/styles';
 import Button from '@mui/material/Button';
-import style from './style.css'
+import './ButtonUpload.css'
 
 const VisuallyHiddenInput = styled('input')({
   clip: 'rect(0 0 0 0)',
