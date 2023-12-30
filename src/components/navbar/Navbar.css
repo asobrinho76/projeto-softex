@@ -12,13 +12,19 @@ nav {
     margin-top: 20px;
     margin-left: 25px;
     margin-bottom: 30px;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     position: sticky; /*deixa a navbar fixa*/
     top: 0; /*onde vai ficar fixa*/
 }
 
 nav .logo {
     display: flex;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+    
     
 }
 
@@ -72,10 +78,9 @@ nav ul li a:not(.active):hover { /*não vai ter hover na página ativa*/
     border-radius: 0.2rem;
  }
 
- @media (max-width: 480px){
+ @media (max-width: 992px){
     nav .menu{
         display: flex;
-        margin-top: 1.5rem;
     }
 
     nav .logo {
