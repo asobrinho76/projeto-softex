@@ -1,10 +1,92 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Salas.css'
 import {Link, NavLink} from 'react-router-dom'
+import CustomButton from '../../components/button/button'
+import DataTable from '../../components/tabela/tabela'
+import { DeleteOutline, EditOutlined } from '@mui/icons-material';
+import { IconButton } from '@mui/material';
+import CustomInput from '../../components/input/input'
 
-const Salas = () => {
+
+const handleEdit = (id) => {
+  console.log(`Editar item com ID: ${id}`);
+};
+
+const handleDelete = (id) => {
+  console.log(`Deletar item com ID: ${id}`);
+};
+
+const customColumns = [
+  { field: 'andar', headerName: 'Andar', width: 120 },
+  { field: 'id', headerName: 'Sala', width: 80 },
+  { field: 'empresa', headerName: 'Empresa', width: 150 },
+  {
+    field: 'edit',
+    headerName: '',
+    width: 50,
+    sortable: false,
+    renderCell: (params) => (
+      <IconButton aria-label="edit" size="small" onClick={() => handleEdit(params.row.id)}>
+        <EditOutlined />
+      </IconButton>
+    ),
+  },
+  {
+    field: 'delete',
+    headerName: '',
+    width: 50,
+    sortable: false,
+    renderCell: (params) => (
+      <IconButton aria-label="delete" size="small" onClick={() => handleDelete(params.row.id)}>
+        <DeleteOutline />
+      </IconButton>
+    ),
+  },
+];
+
+const customRows = [
+    { id: 200, andar: '2º Andar', empresa: 'Teste 1' },
+    { id: 1, andar: 'Mezanino', empresa: 'Teste 2' },
+    { id: 301, andar: '3º Andar', empresa: 'Teste 3' },
+    { id: 405, andar: '4º Andar', empresa: 'Teste 4' },
+    { id: 603, andar: '6º Andar', empresa: 'Teste 5' },
+    // Adicione mais usuários conforme necessário
+  
+  // Preencha com os dados necessários
+ // ...
+];
+
+function Salas () {
+
   return (
-    <NavLink to="/salas/cadastrosalas">Cadastrar</NavLink>
+
+    <div className="salas-container"> 
+      <h1>Salas</h1>
+      <div className="dados-salas">
+        <div className="button-salas">
+          <NavLink to="/salas/cadastrosalas">
+            <CustomButton>ADICIONAR</CustomButton>
+          </NavLink>
+        </div>
+        <div className="geral-salas">
+          <div className="input-salas">
+            <CustomInput id="andar" variant="outlined" label="Andar"/>
+            <CustomInput id="sala" variant="outlined" label="Sala"/>
+            <CustomInput id="empresa" variant="outlined" label="Empresa"/>
+            <CustomButton>Salvar</CustomButton>
+          </div>
+          <div className="tabela-salas">
+            <DataTable
+              rows={customRows}
+              columns={customColumns}
+              handleEdit={handleEdit}
+              handleDelete={handleDelete}
+            />
+          </div>
+        </div>
+       
+      </div>
+    </div>
 
   )
 }

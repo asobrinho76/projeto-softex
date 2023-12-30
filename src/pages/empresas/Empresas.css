@@ -1,0 +1,26 @@
+.empresa-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    font-family: 'Georama', sans-serif;
+  }
+  
+  .dados-empresa {    
+    width: 80%;
+    margin-top: 30px;
+    background-color: rgba(217, 217, 217, 0.2);
+    height: 80vh;
+    border-radius: 1%;
+    padding: 20px;
+    margin-left: 20px;
+  }
+
+  .button-empresa {
+    margin-left: 800px;
+    padding: 10px;
+  }
+
+  .tabela-empresa {
+    padding: 5px;
+  }
