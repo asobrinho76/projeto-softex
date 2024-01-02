@@ -1,21 +1,26 @@
 import React from 'react';
-import './Cad_salas.css';
 import ButtonSalve from '../../components/buttonsalve/ButtonSalve';
 import Title from '../../components/Texts/Title/Title';
 import CustomInput from '../../components/input/input'
+import './Cad_salas.css';
 
 
 export default function Cad_salas() {
+  
   return (
     <>
-    <header>
-    <Title text="Cadastro de Salas"/>
-    </header>
-    <section>
-    <CustomInput type="text" label="Andar"/>
-    <CustomInput type="text" label="Salas"/>
-    <ButtonSalve text="Salvar"/>
-    </section>
+    <div className="cad-salas-container">
+      <header>
+        <Title text="Cadastro de Salas"/>
+      </header>
+      <div className="cad-dados-salas">
+        <section>
+          <CustomInput type="text" label="Andar"/>
+          <CustomInput type="text" label="Salas"/>
+          <ButtonSalve text="SALVAR"/>
+        </section>
+      </div>
+    </div>
     </>
   )
 }

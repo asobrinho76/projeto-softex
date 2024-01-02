@@ -1,10 +1,11 @@
 import React from 'react'
-import './Empresas.css'
-import {Link, NavLink} from 'react-router-dom'
 import CustomButton from '../../components/button/button'
 import DataTable from '../../components/tabela/tabela'
+import Title from '../../components/Texts/Title/Title'
+import {Link, NavLink} from 'react-router-dom'
 import { DeleteOutline, EditOutlined } from '@mui/icons-material';
 import { IconButton } from '@mui/material';
+import './Empresas.css'
 
 
 function formatarCNPJ(cnpj) {
@@ -68,11 +69,10 @@ const customRows = [
 
 function Empresas () {
 
-
   return (
-
+    
     <div className="empresa-container"> 
-      <h1>Empresas</h1>
+      <Title text="Empresas"/>
       <div className="dados-empresa">
         <div className="button-empresa">
           <NavLink to="/empresas/cadastroempresas">

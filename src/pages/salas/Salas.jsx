@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
-import './Salas.css'
-import {Link, NavLink} from 'react-router-dom'
 import CustomButton from '../../components/button/button'
+import Title from '../../components/Texts/Title/Title'
 import DataTable from '../../components/tabela/tabela'
+import CustomInput from '../../components/input/input'
+import {Link, NavLink} from 'react-router-dom'
 import { DeleteOutline, EditOutlined } from '@mui/icons-material';
 import { IconButton } from '@mui/material';
-import CustomInput from '../../components/input/input'
+import './Salas.css'
 
 
 const handleEdit = (id) => {
@@ -61,7 +62,7 @@ function Salas () {
   return (
 
     <div className="salas-container"> 
-      <h1>Salas</h1>
+      <Title text="Empresas"/>
       <div className="dados-salas">
         <div className="button-salas">
           <NavLink to="/salas/cadastrosalas">

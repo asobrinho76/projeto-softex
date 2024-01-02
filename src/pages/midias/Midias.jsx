@@ -1,10 +1,11 @@
 import React from 'react'
-import './Midias.css'
-import {Link, NavLink} from 'react-router-dom'
 import CustomButton from '../../components/button/button'
 import DataTable from '../../components/tabela/tabela'
+import Title from '../../components/Texts/Title/Title'
+import {Link, NavLink} from 'react-router-dom'
 import { DeleteOutline, EditOutlined } from '@mui/icons-material';
 import { IconButton } from '@mui/material';
+import './Midias.css'
 
 
 const handleEdit = (id) => {
@@ -60,7 +61,7 @@ function Midias () {
   return (
 
     <div className="midia-container"> 
-      <h1>Mídias</h1>
+      <Title text="Mídias"/>
       <div className="dados-midia">
         <div className="button-midia">
           <NavLink to="/midias/cadastromidias">

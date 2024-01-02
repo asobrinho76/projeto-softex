@@ -8,23 +8,28 @@ import './Cad_empresas.css'
 
 
 export default function Cad_empresas() {
+  
   return (
     <>
-    <header>
-    <Title text="Cadastro de empresas"/>
-    </header>
-    <section>
-      <form>
-    <CustomInput type="text" label="CNPJ"/>
-    <CustomInput type="text" label="Razão social"/>
-    <CustomInput type="text" label="Nome fantasia"/>
-    <CustomInput type="password" label="Senha"/>
-    <CustomInput type="text" label="Contato"/>
-    <ButtonUpload label="Anexar Logomarca" className="buttonLogo"/>
-    <Label text1="*Formato PNG" text2="*até 50MB"/>
-    <ButtonSalve text="Salvar"/>
-    </form>
-    </section>
+    <div className="cad-empresa-container"> 
+      <header>
+        <Title text="Cadastro de Empresas"/>
+      </header>
+      <div className="cad-dados-empresa">
+        <section>
+          <form>
+            <CustomInput type="text" label="CNPJ"/>
+            <CustomInput type="text" label="Razão social"/>
+            <CustomInput type="text" label="Nome fantasia"/>
+            <CustomInput type="password" label="Senha"/>
+            <CustomInput type="text" label="Contato"/>
+            <ButtonUpload label="Anexar Logomarca" className="buttonLogo"/>
+            <Label text1="*Formato PNG" text2="*até 50MB"/>
+            <ButtonSalve text="SALVAR"/>
+          </form>
+        </section>
+      </div>
+    </div>
     </>
   )
 }
