@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import InputNumber from 'react-input-number';
  
 function App() {
   const [num, setNum] = useState(2.2);

@@ -1,0 +1,28 @@
+.carousel-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+  }
+  
+  .carousel-image {
+    width: 90%;
+    height: 90%;
+    display: block;
+    max-width: 100%;  
+    
+  }
+  
+  
+  @media (max-width: 768px) {
+    .carousel-image {
+      max-width: 80%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .carousel-image {
+      max-width: 90%;
+    }
+  }
+  

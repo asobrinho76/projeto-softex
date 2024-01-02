@@ -1,6 +1,6 @@
 import React from 'react'
-import './Home.css'
 import Saudacao from '/src/components/saudacao/Saudacao'
+import './Home.css'
 
 
 const Home = () => {

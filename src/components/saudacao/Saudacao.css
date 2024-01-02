@@ -1,0 +1,22 @@
+.saudacao{
+    background-image: url(../../imagens/fundo.tela.png);
+    height: 500px;
+    background-position:80%;
+    background-repeat: no-repeat; 
+}
+
+.title , .nomeUser{
+    font-size: 5rem;
+    color: black;
+    padding-left: 18rem;
+}
+
+.title{
+    padding-top: 8rem;
+}
+
+.nomeUser {
+    color:#FC5E05;
+    font-size: 8rem;  
+}
+

@@ -1,12 +1,14 @@
-import React from 'react'
-import './Saudacao.css'
+import React from "react";
+import "./Saudacao.css";
 
-const Saudacao = ({ nome }) => {
+const Saudacao = ({ nomeUser }) => {
+  nomeUser = "Carol";
   return (
-    <p>
-        Bem-vindo, {nome}
-    </p>
-  )
-}
+    <div className="saudacao">
+      <h1 className="title">Bem-vindo,</h1>
+      <h1 className="nomeUser"> {nomeUser}</h1>
+      </div>
+  );
+};
 
-export default Saudacao
+export default Saudacao;
