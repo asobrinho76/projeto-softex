@@ -28,7 +28,7 @@ import './Cad_midias.css';
           <Label text1="*Imagem até 50MB" text2="*Vídeo até 5 minutos"/>
           <Subtitle text="Período de exibição"/>
           <div className="data-pick">
-          <ResponsiveDatePickers />
+            <ResponsiveDatePickers />
           </div>
           <ButtonSalve text="SALVAR"/>
         </section>

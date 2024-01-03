@@ -1,37 +1,37 @@
 .salas-container {
-    /* Estilos para o contêiner principal */
-    /* Por exemplo: */
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    font-family: 'Georama', sans-serif;
-  }
-  
-  .dados-salas {    
-    width: 80%;
-    margin-top: 30px;
-    background-color: rgba(217, 217, 217, 0.2);
-    height: 80%;
-    border-radius: 1%;
-    padding: 20px;
-    margin-left: 20px;
-    
-  }
+  /* Estilos para o contêiner principal */
+  /* Por exemplo: */
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  font-family: 'Georama', sans-serif;
+}
 
-  .button-salas{
-    margin-left: 800px;
-    padding: 10px;
-  }
+.dados-salas {    
+  width: 80%;
+  margin-top: 30px;
+  background-color: rgba(217, 217, 217, 0.2);
+  height: 80%;
+  border-radius: 1%;
+  padding: 20px;
+  margin-left: 20px;
 
-  .geral-salas {
-    display: flex;
-    justify-content: space-around;
-  }
+}
 
-  .input-salas .tabela-salas{
-    padding: 5px;
-  }
+.button-salas{
+  margin-left: 850px;
+  padding: 10px;
+}
+
+.geral-salas {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-salas {
+  width: 100%;
+}
 
 
   
