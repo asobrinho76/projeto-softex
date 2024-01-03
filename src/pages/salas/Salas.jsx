@@ -3,6 +3,7 @@ import CustomButton from '../../components/button/button'
 import Title from '../../components/Texts/Title/Title'
 import DataTable from '../../components/tabela/tabela'
 import CustomInput from '../../components/input/input'
+import ButtonSalve from '../../components/buttonsalve/ButtonSalve';
 import {Link, NavLink} from 'react-router-dom'
 import { DeleteOutline, EditOutlined } from '@mui/icons-material';
 import { IconButton } from '@mui/material';
@@ -74,7 +75,7 @@ function Salas () {
             <CustomInput id="andar" variant="outlined" label="Andar"/>
             <CustomInput id="sala" variant="outlined" label="Sala"/>
             <CustomInput id="empresa" variant="outlined" label="Empresa"/>
-            <CustomButton>Salvar</CustomButton>
+            <ButtonSalve text="SALVAR"/>
           </div>
           <div className="tabela-salas">
             <DataTable
@@ -85,7 +86,6 @@ function Salas () {
             />
           </div>
         </div>
-       
       </div>
     </div>
 
