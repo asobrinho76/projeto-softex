@@ -6,6 +6,7 @@ import {Link, NavLink} from 'react-router-dom'
 import { DeleteOutline, EditOutlined } from '@mui/icons-material';
 import { IconButton } from '@mui/material';
 import './Usuarios.css'
+import Navbar from '../../components/navbar/Navbar';
 
 
 function formatarCPF(cpf) {
@@ -66,6 +67,11 @@ const customRows = [
 function Usuarios () {
 
   return (
+    <>
+    <div className="NavBar">
+      <Navbar />
+    </div>
+
     
     <div className="usuarios-container"> 
       <Title text="Usuários"/>
@@ -85,6 +91,7 @@ function Usuarios () {
         </div>
       </div>
     </div>
+    </>
     
       
     
