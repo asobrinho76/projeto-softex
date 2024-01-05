@@ -25,7 +25,7 @@ export default function Cad_empresas() {
                 <CustomInput type="password" label="Senha" />
                 <CustomInput type="text" label="Contato" />
                 <ButtonUpload label="Anexar Logomarca" className="buttonLogo" />
-                <Label text1="*Formato PNG" text2="*até 50MB" />
+                <Label text1="*Formato PNG" text2="*até 50MB" /><br/>
                 <ButtonSalve text="SALVAR" />
               </form>
             </section>

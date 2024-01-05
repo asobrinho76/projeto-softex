@@ -9,6 +9,7 @@ import { DeleteOutline, EditOutlined } from "@mui/icons-material";
 import { IconButton } from "@mui/material";
 import "./Salas.css";
 import Navbar from "../../components/navbar/Navbar";
+import Select from "../../components/select/Select";
 
 const handleEdit = (id) => {
   console.log(`Editar item com ID: ${id}`);
@@ -74,7 +75,7 @@ function Salas() {
       </div>
 
       <div className="salas-container">
-        <Title text="Empresas" />
+        <Title text="Salas" />
         <div className="dados-salas">
           <div className="button-salas">
             <NavLink to="/salas/cadastrosalas">
@@ -83,10 +84,10 @@ function Salas() {
           </div>
           <div className="geral-salas">
             <div className="input-salas">
-              <CustomInput id="andar" variant="outlined" label="Andar" />
-              <CustomInput id="sala" variant="outlined" label="Sala" />
-              <CustomInput id="empresa" variant="outlined" label="Empresa" />
-              <ButtonSalve text="SALVAR" />
+              <Select id="andar" label="Andar" />
+              <Select id="sala" label="Sala" />
+              <Select id="empresa" label="Empresa" />
+              <ButtonSalve text="Assossiar" />
             </div>
             <div className="tabela-salas">
               <DataTable
