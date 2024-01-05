@@ -8,11 +8,11 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-right: 20px;
-    margin-top: 20px;
-    margin-left: 25px;
+    margin-right: 0%px;
+    margin-top: 0%;
+    margin-left: 0%;
     margin-bottom: 30px;
-    background-color: #ffffff;
+    background-color: #000000;
     position: sticky; /*deixa a navbar fixa*/
     top: 0; /*onde vai ficar fixa*/
 }
@@ -48,10 +48,13 @@ nav ul li {
 nav ul li a {
     display: block;
     text-decoration: none;
-    color: black;
+    color: #ffff;
     padding: 0.5rem;
-    margin: 0 0.5rem;
+    margin: 0 0.8rem;
     border-radius: 0.5rem;
+    margin-right: 25px ;
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
 }
 
 nav ul li a:not(.active):hover { /*não vai ter hover na página ativa*/
@@ -63,8 +66,8 @@ nav ul li a:not(.active):hover { /*não vai ter hover na página ativa*/
  nav .menu {
     display: none;
     position: absolute;
-    top: 0.75rem;
-    right: 0.5rem;
+    top: 0.45rem;
+    right: 0.6rem;
     flex-direction: column;
     justify-content: space-between;
     width: 2.25rem;

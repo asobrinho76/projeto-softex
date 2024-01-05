@@ -1,12 +1,13 @@
 .saudacao{
-    background-image: url(../../imagens/fundo.tela.png);
+    background-image: url(../../imagens/saudacao/Design.svg);
     height: 500px;
     background-position:80%;
     background-repeat: no-repeat; 
 }
 
+
 .title , .nomeUser{
-    font-size: 5rem;
+    font-size: 4rem;
     color: black;
     padding-left: 18rem;
 }
@@ -17,5 +18,14 @@
 
 .nomeUser {
     color:#FC5E05;
-    font-size: 8rem;  
+    font-size: 6rem;  
+}
+
+@media (max-width: 992px){
+    .saudacao {
+         background-image: none;
+        
+    }
+
+   
 }
