@@ -1,13 +1,24 @@
 import * as React from 'react';
-import './buttonSalve.css'
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import Button from '@mui/material/Button';
 
 
-export default function ButtonSalve({text}) {
-  return (
-<form>
-   <div id="botao">
-      <input type="submit" name="botao" value={text} className="buttonSalve" />
-   </div>
-</form>
-  )
-}
+
+    const theme = createTheme({
+      palette: {
+        primary: {
+          main: '#F7934C',
+          contrastText: '#FFFFFF',
+        },
+      },
+    });
+    
+    export default function ButtonSalve({text}) {
+      return (
+        <ThemeProvider theme={theme} >
+          <Button variant="contained" color="primary" className='buttonSalve' style={{marginTop: '10px', marginRight:'auto', marginLeft: 'auto'}}>
+            {text}
+          </Button>
+        </ThemeProvider>
+      );
+    }

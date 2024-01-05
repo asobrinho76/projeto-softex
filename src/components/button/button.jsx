@@ -14,7 +14,7 @@ const theme = createTheme({
 export default function CustomButton({ children, ...props }) {
   return (
     <ThemeProvider theme={theme}>
-      <Button variant="contained" color="primary">
+      <Button variant="contained" color="primary" style={{margin: '10px', marginLeft: '70%'}}>
         {children}
       </Button>
     </ThemeProvider>

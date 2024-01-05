@@ -3,20 +3,3 @@
   width: 100%;
 }
 
-/*section{
-  background-color: rgba(239, 236, 236, 0.581);
-  width: 60%;
-  height: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 5%;
-  padding-bottom: 20px;
-
-}*/
-
-@media (max-width: 992px){
-  section{
-  width: 80%;
-  }
-  
-}

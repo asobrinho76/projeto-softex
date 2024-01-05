@@ -16,12 +16,6 @@
   border-radius: 1%;
   padding: 20px;
   margin-left: 20px;
-
-}
-
-.button-salas{
-  margin-left: 850px;
-  padding: 10px;
 }
 
 .geral-salas {
@@ -30,7 +24,20 @@
 }
 
 .input-salas {
-  width: 100%;
+  width: 80%;
+}
+
+.tabela-salas {
+  padding: 5px;
+  width: 80%  ;
+}
+
+@media(max-width: 992px){
+  .tabela-salas {
+    padding: 5px;
+    width: 70%;
+  }
+  
 }
 
 
